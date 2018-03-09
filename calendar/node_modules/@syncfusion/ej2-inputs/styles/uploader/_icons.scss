@@ -1,0 +1,10 @@
+// icon styles
+@include export-module('uploader-icons') {
+  .e-upload .e-upload-files .e-file-remove-btn.e-icons::before {
+    content: $clear-icon-font-content;
+  }
+
+  .e-upload .e-upload-files .e-file-delete-btn.e-icons::before {
+    content: $delete-icon-font-content;
+  }
+}

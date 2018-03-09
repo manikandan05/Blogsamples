@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Typescript Calendar Components</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link rel="stylesheet" type="text/css" href="../styles/material.css" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/@syncfusion/ej2-buttons/styles/material.css" />    
+    <script data-main="calendar" src="../node_modules/requirejs/require.js"></script>
+    <script>
+        require.config({
+            packages: [{
+                name: '@syncfusion/ej2-base',
+                location: '../node_modules/@syncfusion/ej2-base',
+                main: 'index.js'
+            }, {
+                name: '@syncfusion/ej2-inputs',
+                location: '../node_modules/@syncfusion/ej2-inputs',
+                main: 'src/input/index.js'
+            }, {
+                name: '@syncfusion/ej2-buttons',
+                location: '../node_modules/@syncfusion/ej2-buttons',
+                main: 'index.js'
+            }, {
+                name: '@syncfusion/ej2-popups/src/common',
+                location: '../node_modules/@syncfusion/ej2-popups/src/common',
+                main: 'index.js'
+            }, {
+                name: '@syncfusion/ej2-popups',
+                location: '../node_modules/@syncfusion/ej2-popups',
+                main: 'src/popup/index.js'
+            }, {
+                name: '@syncfusion/ej2-lists',
+                location: '../node_modules/@syncfusion/ej2-lists',
+                main: 'src/common/list-base.js'
+            },
+            {
+                name: '@syncfusion/ej2-navigations',
+                location: '../node_modules/@syncfusion/ej2-navigations',
+                main: 'src/sidebar/index.js'
+            }, {
+                name: '@syncfusion/ej2-data',
+                location: '../node_modules/@syncfusion/ej2-data',
+                main: 'index.js'
+            }]
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="col-lg-12 control-section">
+        <div class="content-wrapper">
+            <div id="calendar"></div>
+            <br/>
+            <br/>
+        </div>
+    </div>
+
+    <style>
+        .e-calendar.e-custom-picker {
+            padding-bottom: 15px;
+        }
+
+        .e-calendar.e-custom-picker .e-align {
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+
+        .e-calendar.e-custom-picker .e-align.e-btn {
+            padding: 5px 0;
+            display: block;
+            height: 30px;
+        }
+
+        .e-calendar.e-custom-picker .timeContainer .e-label-text {
+            cursor: pointer;
+            color: blue;
+            padding: 0 4px 0 0;
+        }
+    </style>
+</body>
+
+</html>
